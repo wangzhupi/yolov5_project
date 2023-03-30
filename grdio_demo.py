@@ -27,5 +27,6 @@ gr.Interface(inputs=["image",gr.Slider(minimum = 0,maximum = 1,value = base_conf
              outputs=["image"],
              fn = det_image,
              title = title,
+             live = True,
              description = desc,
              examples=[["/home/udf/workspace/wangzijian/yolov5/data/images/bus.jpg",show_conf,show_iou],["/home/udf/workspace/wangzijian/yolov5/data/images/zidane.jpg",base_conf,base_iou]]).launch()
